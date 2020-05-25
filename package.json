@@ -1,0 +1,41 @@
+{
+  "name": "react-portfolio-be",
+  "version": "1.0.0",
+  "description": "Backend for my react portfolio",
+  "engines": {
+    "node": "12.11.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --watch",
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiffany-simionescu/react-portfolio-be"
+  },
+  "keywords": [],
+  "author": "Tiffany Simionescu",
+  "license": "MIT",
+  "homepage": "https://tiffany-simionescu-portfolio.heroku.com",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.4",
+    "nodemon": "^2.0.2",
+    "pg": "^7.18.2",
+    "postgresql": "0.0.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.0",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  }
+}

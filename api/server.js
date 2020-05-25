@@ -5,6 +5,11 @@ const cors = require('cors');
 
 // Routers
 const userRouter = require('../routers/user-router');
+const reactProjectRouter = require('../routers/react-project-router');
+const reduxProjectRouter = require('../routers/redux-project-router');
+const nodeProjectRouter = require('../routers/node-project-router');
+const sqliteProjectRouter = require('../routers/sqlite-project-router');
+const pgProjectRouter = require('../routers/postgresql-project-router');
 
 // Server
 const server = express();
@@ -16,6 +21,11 @@ server.use(cors());
 
 // Routes
 server.use('/api/users', userRouter);
+server.use('/api/reactprojects', reactProjectRouter);
+server.use('/api/reduxprojects', reduxProjectRouter);
+server.use('/api/nodeprojects', nodeProjectRouter);
+server.use('/api/sqliteprojects', sqliteProjectRouter);
+server.use('/api/pgprojects', pgProjectRouter);
 
 // Root Endpoint
 server.get('/', (req, res) => {

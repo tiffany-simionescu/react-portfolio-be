@@ -5,6 +5,11 @@ const secrets = require('../config/secrets');
 
 const Users = require('../actions/user-actions');
 
+const {
+  validateUserId,
+  validateUserPost
+} = require('../middleware/verify-users');
+
 // Token Generator
 function generateToken(user) {
   return jwt.sign({
@@ -37,7 +42,7 @@ userRouter.post('/register', (req, res) => {
 userRouter.post('/login', (req, res) => {
   let { username, password } = req.body;
 
-  Users.findUserByFilter({ username })
+  Users.findByFilter({ username })
     .then(user => {
       if (user.username === 'tiffany87' && bcrypt.compareSync(password, user.password)) {
         const token = generateToken(user);
@@ -73,7 +78,7 @@ userRouter.get('/', (req, res) => {
 })
 
 // GET - /api/users/:id
-userRouter.get('/:id', (req, res) => {
+userRouter.get('/:id', validateUserId(), (req, res) => {
   Users.findById(req.params.id)
     .then(user => {
       res.status(200).json(user);
@@ -81,6 +86,21 @@ userRouter.get('/:id', (req, res) => {
     .catch(err => {
       res.status(500).json({
         message: "There was an error while trying to retrieve the user. Please try again later."
+      })
+    })
+})
+
+// PUT - /api/users/:id
+userRouter.put('/:id', validateUserId(), validateUserPost(), (req, res) => {
+  const changes = req.body;
+
+  Users.update(req.params.id, changes)
+    .then(user => {
+      res.status(201).json(user);
+    })
+    .catch(err => {
+      res.status(500).json({
+        message: "There was error while trying to update the user. Please try again later."
       })
     })
 })

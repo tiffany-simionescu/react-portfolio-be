@@ -105,4 +105,4 @@ userRouter.put('/:id', validateUserId(), validateUserPost(), (req, res) => {
     })
 })
 
-export default userRouter;
+module.exports = userRouter;

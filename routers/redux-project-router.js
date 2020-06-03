@@ -76,4 +76,4 @@ reduxProjectRouter.delete('/:id', validateReduxProjectId(), (req, res) => {
     });
 });
 
-export default reduxProjectRouter;
+module.exports = reduxProjectRouter;

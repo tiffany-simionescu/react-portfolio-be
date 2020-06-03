@@ -76,4 +76,4 @@ nodeProjectRouter.delete('/:id', validateNodeProjectId(), (req, res) => {
     });
 });
 
-export default nodeProjectRouter;
+module.exports = nodeProjectRouter;

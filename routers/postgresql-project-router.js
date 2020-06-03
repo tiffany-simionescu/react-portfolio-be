@@ -76,4 +76,4 @@ postgresqlProjectRouter.delete('/:id', validatePostgresqlProjectId(), (req, res)
     });
 });
 
-export default postgresqlProjectRouter;
+module.exports = postgresqlProjectRouter;

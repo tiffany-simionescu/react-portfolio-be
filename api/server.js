@@ -33,3 +33,5 @@ server.get('/', (req, res) => {
     message: "Welcome to Tiffany Simionescu's Portfolio Backend!"
   })
 })
+
+module.exports = server;

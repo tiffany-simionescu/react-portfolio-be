@@ -11,7 +11,7 @@ module.exports = {
         password: process.env.PW_DEV,
         database: process.env.DB_DEV,
     },
-    migrations: {
+    migrations: { 
         directory: './database/migrations',
     },
     seeds: {

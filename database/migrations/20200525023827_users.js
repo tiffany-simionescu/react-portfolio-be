@@ -20,7 +20,7 @@ exports.up = async function(knex) {
     users.string("email", 128)
       .notNullable()
 
-    users.bigInteger("phone_number")
+    users.bigInteger("phone_number") 
       .notNullable()
       .unique()
   })

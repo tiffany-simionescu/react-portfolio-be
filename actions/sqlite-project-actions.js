@@ -18,7 +18,7 @@ function findById(sqlite_project_id) {
 };
 
 async function add(sqlite_project) {
-  const [sqlite_project_id] = await db("sqlite_projects").insert(sqlite_project);
+  const [sqlite_project_id] = await db("sqlite_projects").insert(sqlite_project, "sqlite_project_id");
 
   return findById(sqlite_project_id);
 };

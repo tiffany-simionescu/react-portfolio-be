@@ -18,7 +18,7 @@ function findById(postgresql_project_id) {
 };
 
 async function add(postgresql_project) {
-  const [postgresql_project_id] = await db("postgresql_projects").insert(postgresql_project);
+  const [postgresql_project_id] = await db("postgresql_projects").insert(postgresql_project, "postgresql_project_id");
 
   return findById(postgresql_project_id);
 };

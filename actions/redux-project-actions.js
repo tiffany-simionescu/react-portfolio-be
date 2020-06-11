@@ -18,7 +18,7 @@ function findById(redux_project_id) {
 };
 
 async function add(redux_project) {
-  const [redux_project_id] = await db("redux_projects").insert(redux_project);
+  const [redux_project_id] = await db("redux_projects").insert(redux_project, "redux_project_id");
 
   return findById(redux_project_id);
 };

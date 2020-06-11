@@ -4,20 +4,20 @@ exports.up = async function(knex) {
 
     users.increments("user_id")
 
-    users.string("username", 128)
+    users.string("username")
       .notNullable()
       .unique()
 
-    users.string("password", 128)
+    users.string("password")
       .notNullable()
 
-    users.string("first_name", 128)
+    users.string("first_name")
       .notNullable()
 
-    users.string("last_name", 128)
+    users.string("last_name")
       .notNullable()
 
-    users.string("email", 128)
+    users.string("email")
       .notNullable()
 
     users.bigInteger("phone_number") 

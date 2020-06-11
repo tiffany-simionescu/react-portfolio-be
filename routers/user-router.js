@@ -20,7 +20,7 @@ function generateToken(user) {
 }
 
 // POST -/api/users/register
-userRouter.post('/register', (req, res) => {
+userRouter.post('/register', validateUserPost(), (req, res) => {
   let user = req.body;
   let hash = bcrypt.hashSync(user.password, 10);
   user.password = hash;
@@ -101,6 +101,21 @@ userRouter.put('/:id', validateUserId(), validateUserPost(), (req, res) => {
     .catch(err => {
       res.status(500).json({
         message: "There was error while trying to update the user. Please try again later."
+      })
+    })
+})
+
+// DELETE - /api/users/:id
+userRouter.delete('/:id', validateUserId(), (req, res) => {
+  Users.remove(req.params.id)
+    .then(() => {
+      res.status(200).json({
+        message: "User was removed successfully."
+      })
+    })
+    .catch(err => {
+      res.status(500).json({
+        message: "There was a problem removing the User. Please try again later."
       })
     })
 })

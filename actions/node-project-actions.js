@@ -18,7 +18,7 @@ function findById(node_project_id) {
 };
 
 async function add(node_project) {
-  const [node_project_id] = await db("node_projects").insert(node_project);
+  const [node_project_id] = await db("node_projects").insert(node_project, "node_project_id");
 
   return findById(node_project_id);
 };

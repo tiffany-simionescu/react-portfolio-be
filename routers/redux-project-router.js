@@ -23,8 +23,8 @@ reduxProjectRouter.get('/', (req, res) => {
 // GET - /api/reduxprojects/:redux_project_id
 reduxProjectRouter.get('/:id', validateReduxProjectId(), (req, res) => {
   reduxProjects.find(req.params.id)
-    .then(rp => {
-      res.status(200).json(rp);
+    .then(redux => {
+      res.status(200).json(redux);
     })
     .catch(err => {
       res.status(500).json({
@@ -36,8 +36,8 @@ reduxProjectRouter.get('/:id', validateReduxProjectId(), (req, res) => {
 // POST - /api/reduxprojects
 reduxProjectRouter.post('/', validateReduxProjectPost(), (req, res) => {
   reduxProjects.add(req.body)
-    .then(rp => {
-      res.status(201).json(rp);
+    .then(redux => {
+      res.status(201).json(redux);
     })
     .catch(err => {
       res.status(500).json({
@@ -51,8 +51,8 @@ reduxProjectRouter.put('/:id', validateReduxProjectId(), validateReduxProjectPos
   const changes = req.body;
 
   reduxProjects.update(req.params.id, changes)
-    .then(rp => {
-      res.status(200).json(rp);
+    .then(redux => {
+      res.status(200).json(redux);
     })
     .catch(err => {
       res.status(500).json({

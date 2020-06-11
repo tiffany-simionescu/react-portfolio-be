@@ -23,8 +23,8 @@ nodeProjectRouter.get('/', (req, res) => {
 // GET - /api/nodeprojects/:node_project_id
 nodeProjectRouter.get('/:id', validateNodeProjectId(), (req, res) => {
   nodeProjects.find(req.params.id)
-    .then(np => {
-      res.status(200).json(np);
+    .then(node => {
+      res.status(200).json(node);
     })
     .catch(err => {
       res.status(500).json({
@@ -36,8 +36,8 @@ nodeProjectRouter.get('/:id', validateNodeProjectId(), (req, res) => {
 // POST - /api/nodeprojects
 nodeProjectRouter.post('/', validateNodeProjectPost(), (req, res) => {
   nodeProjects.add(req.body)
-    .then(np => {
-      res.status(201).json(np);
+    .then(node => {
+      res.status(201).json(node);
     })
     .catch(err => {
       res.status(500).json({
@@ -51,8 +51,8 @@ nodeProjectRouter.put('/:id', validateNodeProjectId(), validateNodeProjectPost()
   const changes = req.body;
 
   nodeProjects.update(req.params.id, changes)
-    .then(np => {
-      res.status(200).json(np);
+    .then(node => {
+      res.status(200).json(node);
     })
     .catch(err => {
       res.status(500).json({

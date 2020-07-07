@@ -10,6 +10,7 @@ const reduxProjectRouter = require('../routers/redux-project-router');
 const nodeProjectRouter = require('../routers/node-project-router');
 const sqliteProjectRouter = require('../routers/sqlite-project-router');
 const postgresqlProjectRouter = require('../routers/postgresql-project-router');
+const pythonProjectRouter = require('../routers/python-project-router');
 
 // Server
 const server = express();
@@ -26,6 +27,7 @@ server.use('/api/reduxprojects', reduxProjectRouter);
 server.use('/api/nodeprojects', nodeProjectRouter);
 server.use('/api/sqliteprojects', sqliteProjectRouter);
 server.use('/api/postgresqlprojects', postgresqlProjectRouter);
+server.use('/api/pythonprojects', pythonProjectRouter);
 
 // Root Endpoint
 server.get('/', (req, res) => {

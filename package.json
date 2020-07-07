@@ -1,7 +1,7 @@
 {
   "name": "react-portfolio-be",
   "version": "1.0.0",
-  "description": "Backend for my react portfolio",
+  "description": "Backend for Tiffany Simionescu's react portfolio",
   "engines": {
     "node": "12.11.1"
   },

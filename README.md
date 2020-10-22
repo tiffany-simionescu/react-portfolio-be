@@ -219,6 +219,7 @@ To get the server running locally:
 `remove(user_id)` -> Removes a specific user from the database
 
 
+
 #### React Projects
 
 `find()` -> Returns all React projects
@@ -230,6 +231,7 @@ To get the server running locally:
 `update(react_project_id, changes)` -> Updates a specific React project
 
 `remove(react_project_id)` -> Removes a specific React project from the database
+
 
 
 #### Redux Projects
@@ -245,6 +247,7 @@ To get the server running locally:
 `remove(redux_project_id)` -> Removes a specific Redux project from the database
 
 
+
 #### Node Projects
 
 `find()` -> Returns all Node projects
@@ -256,6 +259,7 @@ To get the server running locally:
 `update(node_project_id, changes)` -> Updates a specific Node project
 
 `remove(node_project_id)` -> Removes a specific Node project from the database
+
 
 
 #### SQLite Projects
@@ -271,6 +275,7 @@ To get the server running locally:
 `remove(sqlite_project_id)` -> Removes a specific SQLite project from the database
 
 
+
 #### PostgreSQL Projects
 
 `find()` -> Returns all PostgreSQL projects
@@ -284,6 +289,7 @@ To get the server running locally:
 `remove(postgresql_project_id)` -> Removes a specific PostgreSQL project from the database
 
 
+
 #### Python Projects
 
 `find()` -> Returns all Python projects
@@ -295,6 +301,7 @@ To get the server running locally:
 `update(python_project_id, changes)` -> Updates a specific Python project
 
 `remove(python_project_id)` -> Removes a specific Python project from the database
+
 
 
 ## 3️⃣ Environment Variables

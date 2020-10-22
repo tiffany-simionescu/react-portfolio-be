@@ -303,6 +303,10 @@ To get the server running locally:
 `remove(python_project_id)` -> Removes a specific Python project from the database
 
 
+## Future Plans
+- Add Angular projects
+- Add MongoDB projects
+
 
 ## 3️⃣ Environment Variables
 
@@ -348,12 +352,3 @@ Remember that this project is licensed under the MIT license, and by submitting 
 ### Attribution
 
 These contribution guidelines have been adapted from [this good-Contributing.md-template](https://gist.github.com/PurpleBooth/b24679402957c63ec426).
-
-## Documentation
-
-See [Frontend Documentation](https://github.com/Lambda-School-Labs/nfl-fantasy-fe/blob/master/README.md) for details on the fronend of our project.
-
-
-## Future Plans
-- Add Angular projects
-- Add MongoDB projects

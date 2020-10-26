@@ -18,7 +18,7 @@ function findById(react_project_id) {
 };
 
 async function add(react_project) {
-  const [react_project_id] = await db("react_projects").insert(react_project);
+  const [react_project_id] = await db("react_projects").insert(react_project, "react_project_id");
 
   return findById(react_project_id);
 };

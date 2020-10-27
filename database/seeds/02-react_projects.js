@@ -15,7 +15,7 @@ exports.seed = function(knex) {
           react_project_id: 2,
           react_project_image: "https://images.pexels.com/photos/209956/pexels-photo-209956.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           react_project_title: "Tackle My Trade",
-          react_project_description: "An NFL Fantasy Football Trade Anaylzer is to help a fan to build their ultimate fantasy league, by making the optinmal trades trades to win their fantasy competitions.  The front end was built using React, Material-UI, LESS, CSS, Styled-Components, Redux, Heroku and  React-Router-Dom.",
+          react_project_description: "An NFL Fantasy Football Trade Anaylzer is to help a fan to build their ultimate fantasy league, by making the optinmal trades trades to win their fantasy competitions. The front end was built using React, Material-UI, LESS, CSS, Styled-Components, Redux, Heroku and  React-Router-Dom.",
           react_project_github_link: "https://github.com/tiffany-simionescu/nfl-fantasy-fe/tree/master",
           react_project_live_link: "http://www.tacklemytrade.com/"
         }

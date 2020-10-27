@@ -5,27 +5,19 @@ exports.seed = function(knex) {
       return knex('postgresql_projects').insert([
         {
           postgresql_project_id: 1,
-          postgresql_project_image: "https://miro.medium.com/max/3840/1*wsG43wOOFexWg_xa0CEhuQ.jpeg",
-          postgresql_project_title: "PostgreSQL Project 1",
-          postgresql_project_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque consectetur libero feugiat consequat. Quisque tempus, nunc vitae scelerisque aliquet, orci est interdum arcu, vitae.",
-          postgresql_project_github_link: "https://github.com/tiffany-simionescu",
-          postgresql_project_live_link: "http://tiffanysimionescu.com/"
+          postgresql_project_image: "https://images.pexels.com/photos/209956/pexels-photo-209956.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          postgresql_project_title: "Tackle My Trade",
+          postgresql_project_description: "An NFL Fantasy Football Trade Anaylzer is to help a fan to build their ultimate fantasy league, by making the optinmal trades trades to win their fantasy competitions. The back end was built using Express, NodeJS, PostgreSQL, SQLite3 and Knex.",
+          postgresql_project_github_link: "https://github.com/tiffany-simionescu/nfl-fantasy-be",
+          postgresql_project_live_link: "https://data.heroku.com/dataclips/rwhkccnmdgnbgemujsjivyshywlb"
         },
         {
           postgresql_project_id: 2,
-          postgresql_project_image: "https://miro.medium.com/max/3840/1*wsG43wOOFexWg_xa0CEhuQ.jpeg",
-          postgresql_project_title: "PostgreSQL Project 2",
-          postgresql_project_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque consectetur libero feugiat consequat. Quisque tempus, nunc vitae scelerisque aliquet, orci est interdum arcu, vitae.",
-          postgresql_project_github_link: "https://github.com/tiffany-simionescu",
-          postgresql_project_live_link: "http://tiffanysimionescu.com/"
-        },
-        {
-          postgresql_project_id: 3,
-          postgresql_project_image: "https://miro.medium.com/max/3840/1*wsG43wOOFexWg_xa0CEhuQ.jpeg",
-          postgresql_project_title: "PostgreSQL Project 3",
-          postgresql_project_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque consectetur libero feugiat consequat. Quisque tempus, nunc vitae scelerisque aliquet, orci est interdum arcu, vitae.",
-          postgresql_project_github_link: "https://github.com/tiffany-simionescu",
-          postgresql_project_live_link: "http://tiffanysimionescu.com/"
+          postgresql_project_image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          postgresql_project_title: "Portfolio API",
+          postgresql_project_description: "",
+          postgresql_project_github_link: "https://github.com/tiffany-simionescu/react-portfolio-be",
+          postgresql_project_live_link: "https://tiffany-simionescu-portfolio.herokuapp.com/"
         }
       ]);
     });

@@ -17,7 +17,7 @@ exports.up = async function(knex) {
     .notNullable()
 
     python.string("python_project_live_link")
-    .notNullable()
+    // .notNullable()
   });
 };
 

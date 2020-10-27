@@ -17,7 +17,7 @@ exports.up = async function(knex) {
       .notNullable()
 
     postgresql.string("postgresql_project_live_link")
-      .notNullable()
+      // .notNullable()
   });
 };
 

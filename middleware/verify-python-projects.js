@@ -44,10 +44,6 @@ function validatePythonProjectPost() {
       return res.status(400).json({
         message: "Please provide a Github link for your project."
       })
-    } else if (!req.body.python_project_live_link) {
-      return res.status(400).json({
-        message: "Please provide a live link for your project."
-      })
     } else {
       next();
     }

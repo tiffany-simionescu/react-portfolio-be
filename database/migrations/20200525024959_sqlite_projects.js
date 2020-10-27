@@ -17,7 +17,7 @@ exports.up = async function(knex) {
       .notNullable()
 
     sqlite.string("sqlite_project_live_link")
-      .notNullable()
+      // .notNullable()
   });
 };
 

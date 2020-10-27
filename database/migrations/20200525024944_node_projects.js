@@ -17,7 +17,7 @@ exports.up = async function(knex) {
       .notNullable()
 
     node.string("node_project_live_link")
-      .notNullable()
+      // .notNullable()
   });
 };
 

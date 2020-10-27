@@ -17,7 +17,7 @@ exports.up = async function(knex) {
       .notNullable()
 
     redux.string("redux_project_live_link")
-      .notNullable()
+      // .notNullable()
   });
 };
 

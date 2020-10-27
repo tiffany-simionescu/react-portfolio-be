@@ -17,7 +17,7 @@ exports.up = async function(knex) {
       .notNullable()
 
     react.string("react_project_live_link")
-      .notNullable()
+      // .notNullable()
   });
 };
 

@@ -7,7 +7,7 @@ exports.seed = function(knex) {
           postgresql_project_id: 1,
           postgresql_project_image: "https://images.pexels.com/photos/209956/pexels-photo-209956.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           postgresql_project_title: "Tackle My Trade",
-          postgresql_project_description: "An NFL Fantasy Football Trade Analyzer is to help a fan to build their ultimate fantasy league, by making the optimal trades to win their fantasy competitions. The back end was built using Express, NodeJS, PostgreSQL, SQLite3 and Knex.",
+          postgresql_project_description: "An NFL Fantasy Football Trade Analyzer that helps a fan to build their ultimate fantasy league by making the optimal trades to win their fantasy competitions. Tech used: React, Material-UI, LESS, Styled-Components, Redux, and Heroku.",
           postgresql_project_github_link: "https://github.com/tiffany-simionescu/nfl-fantasy-be",
           postgresql_project_live_link: "https://data.heroku.com/dataclips/rwhkccnmdgnbgemujsjivyshywlb"
         },

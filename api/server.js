@@ -26,7 +26,7 @@ server.use('/api/reactprojects', reactProjectRouter);
 server.use('/api/reduxprojects', reduxProjectRouter);
 server.use('/api/nodeprojects', nodeProjectRouter);
 server.use('/api/sqliteprojects', sqliteProjectRouter);
-server.use('/api/pgprojects', postgresqlProjectRouter);
+server.use('/api/postgresqlprojects', postgresqlProjectRouter);
 server.use('/api/pythonprojects', pythonProjectRouter);
 
 // Root Endpoint

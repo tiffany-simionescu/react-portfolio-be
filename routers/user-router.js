@@ -1,3 +1,4 @@
+require('dotenv').config();
 const userRouter = require('express').Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
@@ -44,7 +45,8 @@ userRouter.post('/login', (req, res) => {
 
   Users.findByFilter({ username })
     .then(user => {
-      if (user.username === 'tiffany87' && bcrypt.compareSync(password, user.password)) {
+      if (user.username === process.env.ADMIN && bcrypt.compareSync(password, user.password)) {
+      // if (user.username === 'tiffany87' && bcrypt.compareSync(password, user.password)) {
         const token = generateToken(user);
 
         res.status(200).json({
